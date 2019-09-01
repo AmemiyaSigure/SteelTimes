@@ -1,29 +1,32 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "steeltimes",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Steel Times",
+  "description": "Turn Minecraft into an industrialized world.",
   "authors": [
-    "Me!"
+    "AmemiyaSigure"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://st.sigure.moe/",
+    "sources": "https://github.com/AmemiyaSigure/SteelTimes"
   },
 
-  "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "license": "Apache-2.0",
+  "icon": "assets/steeltimes/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "moe.sigure.fabricmod.steeltimes.SteelTimes"
+    ],
+    "client": [
+      "moe.sigure.fabricmod.steeltimes.SteelTimesClient"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "steeltimes.mixins.json"
   ],
 
   "depends": {
